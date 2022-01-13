@@ -9,7 +9,15 @@ const app = express();
 conectarDB();
 
 // Habilitar cors
-app.use(cors());
+const opcionesCors = {
+    origin:'https://tender-leakey-bb62d6.netlify.app/', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
+app.use(cors(opcionesCors));
+
+
+
 
 // Habilitar express.json
 app.use(express.json({ extended: true}));
