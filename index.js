@@ -10,7 +10,7 @@ conectarDB();
 
 // Habilitar cors
 const opcionesCors = {
-    origin:'https://tender-leakey-bb62d6.netlify.app/', 
+    origin:'https://tender-leakey-bb62d6.netlify.app', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
